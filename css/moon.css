@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/***********************************
+		REFERENCES
+font-sizes
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1rem
+0.618rem
+
+font-families
+Droid Serif, Droid Sans
+
+colors
+#000000
+#222222
+#333333
+#D4D4D4
+#CC3300
+#BADA55
+#FFFFFF
+plus the shadow for the text
+
+
+***********************************/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+/***********************************
+		DEFAULTS
+***********************************/
+body{
+	background-color: #222;
+}
+h1, h2, h3, h4{
+	font-family: 'Droid Serif', serif;  /* you need a font stack here */
+}
+h1{
+	font-size: 6.854rem;
+	color: #ffffff;
+}
+h2{
+	text-shadow: 2px 2px 2px rgba(51,51,0, 0.15);
+	color: #CC3300;
+	font-size: 4.236rem;
+}
+h3{
+	text-shadow: 2px 2px 2px rgba(51,51,0, 0.15);
+	color: #CC3300;
+	font-size: 2.618rem;
+}
+h4{
+
+}
+p, li, a{
+	font-family: 'Droid Sans', sans-serif; /* you need a font stack here */
+	font-size: 1rem;
+}
+img{
+	width:90%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+}
+a:link, a:visited{
+	transition: all 0.3s linear;
+}
+a:hover, a:active, a:focus{
+	text-decoration: none;
+}
+
+/***********************************
+		LAYOUT
+***********************************/
+.wrapper{
+	width:90%;
+	max-width: 1020px;
+	min-width: 400px;
+	margin:0 auto 2.0rem;
+	background-color: #d4d4d4;
+}
+.header{
+	background-image: url('../img/moon-header.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-color: #000;
+    min-height: 400px;
+}
+.main{
+	margin: 0 30px;
+}
+.footer{
+	padding: 30px;
+	background-color: #333333; 
+}
+
+/***********************************
+		LINKS 
+-for any that are different than the default
+***********************************/
+
+.footer a:link,
+.footer a:visited{
+	display: block;
+	color: #CC3300;
+}
+.footer a:hover,
+.footer a:active,
+.footer a:focus{
+	color: #BADA55;
+	font-size: 1.2rem;
+}
+
+
+/***********************************
+		CONTENT
+***********************************/
+.header h1{
+	text-align: right;
+	position: absolute;
+	width: 32%;
+	line-height: 6.5rem;
+	margin-top: 40px;
+	padding-left: 30px;
+}
+
+.header img{
+	width: 86%;
+	margin-top: 0px;
+}
+.main h2{
+	padding: 20px 0;
+}
+.main h3{
+	padding: 20px 0 10px;
+}
+.main p{
+	padding-bottom: 20px;
+	
+}
+.main img{
+	border-radius: 50%;/* use border-radius to crop image */
+	width: 25%;/* choose a width percentage for the image too */
+}
+.left{
+	float:left;
+	margin-right:10px;
+	margin-bottom: 10px;
+}
+
+article p{
+	padding: 10px 0;
+}
+.footer p{
+	clear: both;
+	padding-top: 15px;
+	font-size: 0.618rem;
+}
+
+.footer ul{
+	padding: 0 80px;
+}
+.footer li{
+    width: 50%;/* make these 50% the width of the footer */
+	float: left;
+	line-height: 2rem;	
+}
+
+@media (max-width: 600px) {
+	.footer ul{
+	padding: 0 20px;
+}
+}
+@media (min-width: 1050px) {
+.header h1{
+	padding-left: 0;
+}
+}

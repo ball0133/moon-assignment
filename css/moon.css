@@ -67,6 +67,7 @@ img{
 	box-sizing: border-box;
 }
 ul{
+	padding: 0 80px;
 	list-style-type: none;
 }
 a:link, a:visited{
@@ -163,10 +164,6 @@ article p{
 	padding-top: 15px;
 	font-size: 0.618rem;
 }
-
-.footer ul{
-	padding: 0 80px;
-}
 .footer li{
     width: 50%;/* make these 50% the width of the footer */
 	float: left;
@@ -174,12 +171,12 @@ article p{
 }
 
 @media (max-width: 600px) {
-	.footer ul{
-	padding: 0 20px;
-}
+	ul{
+		padding: 0 20px;
+	}
 }
 @media (min-width: 1050px) {
-.header h1{
-	padding-left: 0;
-}
+	.header h1{
+		padding-left: 0;
+	}
 }
